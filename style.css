@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Whole Container */ 
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+/* left sidebar */ 
+
+.left-container {
+    background-color: #1992d4;
+    color: white;
+}
+
+.menu-items img, .support-items img, .dashboard img {
+    height: 1em;
+    filter: invert(1);
+    padding-right: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1em;
+}
+
+li {
+    padding-bottom: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* right side including header, project, and right sidebar */ 
+
+.right-container {
+    display: grid;
+    grid-template-rows: 0.5fr 5fr;
+}
+
+.header-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+}
+
+.project-title {
+    grid-column: span 2;
+}
